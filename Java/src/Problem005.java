@@ -1,4 +1,4 @@
-public class Problem5 {
+public class Problem005 {
 	public static void main(String[] args) {
 		int lcm = 1;
 		for (int i = 2; i <= 20; i++) {

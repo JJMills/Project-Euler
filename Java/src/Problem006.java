@@ -1,4 +1,4 @@
-public class Problem6 {
+public class Problem006 {
 	public static void main(String[] args) {
 		int sum = summationTo(100);
 		System.out.println(sum * sum - summationOfSquaresTo(100));

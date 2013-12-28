@@ -1,4 +1,4 @@
-public class Problem10 {
+public class Problem010 {
 	public static void main(String[] args) {
 		long sum = 0L;
 		int limit = 2_000_000;
