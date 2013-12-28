@@ -1,7 +1,7 @@
 __author__ = 'Joel'
 
 
-def getPrimeNumbersBelow(limit):
+def get_prime_numbers_below(limit):
     primes = [False] * limit
     for i in range(2, limit):
         i_ = i - 2
@@ -11,4 +11,4 @@ def getPrimeNumbersBelow(limit):
     return [i for i in range(limit) if not primes[i]]
 
 
-print(sum(getPrimeNumbersBelow(2000000)))
+print(sum(get_prime_numbers_below(2000000)))

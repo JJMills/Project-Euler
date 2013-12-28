@@ -1,6 +1,6 @@
 __author__ = 'Joel'
 
-def lowestCommonMultiple(a, b):
+def lowest_common_multiple(a, b):
     val = a
     while val % b != 0:
         val += a
@@ -8,5 +8,5 @@ def lowestCommonMultiple(a, b):
 
 lcm = 1
 for i in range(2, 20):
-    lcm = lowestCommonMultiple(lcm, i)
+    lcm = lowest_common_multiple(lcm, i)
 print(lcm)
