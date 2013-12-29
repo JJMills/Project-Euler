@@ -1,0 +1,3 @@
+__author__ = 'Joel'
+
+print(sum(map(int, str(2 ** 1000))))
