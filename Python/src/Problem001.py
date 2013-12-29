@@ -1,7 +1,9 @@
 __author__ = 'Joel'
 
-val = 0
-for i in range(1, 1000):
-    if i % 3 == 0 or i % 5 == 0:
-        val += i
-print(val)
+
+def multiples():
+    return sum([3 * x for x in range(1, 1000 // 3)]) + sum([5 * x for x in range(1, 1000 // 5)]) - sum(
+        [15 * x for x in range(1, 1000 // 15)])
+
+
+print(multiples())

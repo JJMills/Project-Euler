@@ -1,12 +1,17 @@
-import functools
-
 __author__ = 'Joel'
 
 
-def add(x, y):
-    return x + y
+def sum_square_difference_of(n):
+    summation = summation_to(n)
+    return summation * summation - summation_of_squares_to(n)
 
 
-diff = functools.reduce(add, range(1, 101)) ** 2 - functools.reduce(add, [x ** 2 for x in range(1, 101)])
+def summation_to(n):
+    return (n * (n + 1)) / 2
 
-print(diff)
+
+def summation_of_squares_to(n):
+    return (n * (n + 1) * (2 * n + 1)) / 6
+
+
+print(sum_square_difference_of(100))
