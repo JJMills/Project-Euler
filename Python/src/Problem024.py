@@ -3,14 +3,14 @@ __author__ = 'Joel'
 
 def get_largest_index_less_than(permutation, cap):
     for i in range(len(permutation) - 1, 0, -1):
-        if (permutation[cap] < permutation[i]):
+        if permutation[cap] < permutation[i]:
             return i
 
 
 def get_largest_index(permutation):
     k = -1
     for i in range(len(permutation) - 2, -1, -1):
-        if (permutation[i] < permutation[i + 1]):
+        if permutation[i] < permutation[i + 1]:
             k = i
             return k
     return k
