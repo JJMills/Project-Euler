@@ -9,12 +9,12 @@ def get_prime_factorisation(number):
     prime = 1
     while number != 1:
         prime += 1
+        count = 0
         while number % prime == 0:
-            if prime not in primes:
-                primes[prime] = 1
-            else:
-                primes[prime] += 1
+            count += 1
             number /= prime
+        if count != 0:
+            primes[prime] = count
     return primes
 
 

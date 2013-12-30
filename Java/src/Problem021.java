@@ -44,13 +44,13 @@ public class Problem021 {
 			primes.put(2, 0);
 		}
 		for (int prime = 2; number != 1; prime++) {
+			int count = 0;
 			while (number % prime == 0) {
-				if (!primes.containsKey(prime)) {
-					primes.put(prime, 1);
-				} else {
-					primes.put(prime, primes.get(prime) + 1);
-				}
+				count++;
 				number /= prime;
+			}
+			if (count != 0) {
+				primes.put(prime, count);
 			}
 		}
 		return primes;
