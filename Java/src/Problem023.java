@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class Problem023 {
 	private static final int LIMIT = 28123;
 
@@ -42,33 +39,17 @@ public class Problem023 {
 		if (number == 1) {
 			return 1;
 		}
-		Map<Integer, Integer> primes = getPrimeFactorisation(number);
 		int sum = 1;
-		for (Map.Entry<Integer, Integer> entry : primes.entrySet()) {
-			int total = 0;
-			for (int i = 0; i <= entry.getValue(); i++) {
-				total += Math.pow(entry.getKey(), i);
+		int n = number;
+		for (int prime = 2; n != 1; prime++) {
+			int count = 0;
+			int total = 1;
+			while (n % prime == 0) {
+				total += Math.pow(prime, ++count);
+				n /= prime;
 			}
 			sum *= total;
 		}
 		return sum - number;
-	}
-
-	private static Map<Integer, Integer> getPrimeFactorisation(int number) {
-		Map<Integer, Integer> primes = new HashMap<>();
-		if (number == 1) {
-			primes.put(2, 0);
-		}
-		for (int prime = 2; number != 1; prime++) {
-			while (number % prime == 0) {
-				if (!primes.containsKey(prime)) {
-					primes.put(prime, 1);
-				} else {
-					primes.put(prime, primes.get(prime) + 1);
-				}
-				number /= prime;
-			}
-		}
-		return primes;
 	}
 }
