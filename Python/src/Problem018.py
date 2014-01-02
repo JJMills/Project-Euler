@@ -16,7 +16,6 @@ triangle = "75\n" \
            "63 66 04 68 89 53 67 30 73 16 69 87 40 31\n" \
            "04 62 98 27 23 09 70 98 73 93 38 53 60 04 23\n"
 rows = [[int(i) for i in row.split(" ")] for row in triangle.splitlines()]
-for i in range(len(rows) - 2, -1, -1):
-    for j in range(i + 1):
-        rows[i][j] += max(rows[i + 1][j], rows[i + 1][j + 1])
+for i, j in [(i, j) for i in range(len(rows) - 2, -1, -1) for j in range(i + 1)]:
+    rows[i][j] += max(rows[i + 1][j], rows[i + 1][j + 1])
 print(rows[0][0])

@@ -24,9 +24,7 @@ def get_lexicographic_permutation_at(n):
             return permutation
         else:
             l = get_largest_index_less_than(permutation, k)
-            temp = permutation[k]
-            permutation[k] = permutation[l]
-            permutation[l] = temp
+            permutation[k], permutation[l] = permutation[l], permutation[k]
             permutation = permutation[:k + 1] + permutation[:k:-1]
     return permutation
 

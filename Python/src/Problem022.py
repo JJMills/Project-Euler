@@ -14,6 +14,6 @@ def character_to_number(character):
                 return i + 1
 
 
-names = open(os.path.dirname(os.path.abspath(__file__)) + "\\..\\resources\\problem022-names.txt").read().split(",")
+names = open(os.path.dirname(os.path.abspath(__file__)) + r"\..\resources\problem022-names.txt").read().split(",")
 names.sort()
 print(sum([(names.index(line) + 1) * sum(map(character_to_number, line)) for line in names]))
