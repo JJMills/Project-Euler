@@ -10,7 +10,7 @@ import utilities.NumberTheory;
 )
 public class Problem015 extends Problem {
     @Override
-    public void solve() {
-        System.out.println(NumberTheory.getBinomialCoefficient(40, 20));
+    public Object solve() {
+        return NumberTheory.getBinomialCoefficient(40, 20);
     }
 }

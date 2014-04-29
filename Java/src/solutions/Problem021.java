@@ -13,8 +13,8 @@ import java.util.Map;
 )
 public class Problem021 extends Problem {
     @Override
-    public void solve() {
-        System.out.println(getAmicableNumberSumUnder(10000));
+    public Object solve() {
+        return getAmicableNumberSumUnder(10000);
     }
 
     private int getAmicableNumberSumUnder(int limit) {

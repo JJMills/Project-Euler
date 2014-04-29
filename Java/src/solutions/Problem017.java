@@ -15,12 +15,12 @@ public class Problem017 extends Problem {
     private static final String[] TENS = {"twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
 
     @Override
-    public void solve() {
+    public Object solve() {
         int sum = 0;
         for (int i = 1; i <= 1000; i++) {
             sum += parseValue(i).length();
         }
-        System.out.println(sum);
+        return sum;
     }
 
     private String parseValue(int value) {

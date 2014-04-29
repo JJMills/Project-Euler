@@ -32,7 +32,7 @@ public class Problem011 extends Problem {
     };
 
     @Override
-    public void solve() {
+    public Object solve() {
         int max = 0;
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
@@ -46,7 +46,7 @@ public class Problem011 extends Problem {
                 }
             }
         }
-        System.out.println(max);
+        return max;
     }
 
     private int calculateProduct(Direction d, int i, int j) {

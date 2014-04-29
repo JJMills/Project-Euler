@@ -11,7 +11,7 @@ import java.math.BigInteger;
 )
 public class Problem025 extends Problem {
     @Override
-    public void solve() {
+    public Object solve() {
         BigInteger a = BigInteger.ONE;
         BigInteger b = BigInteger.ZERO;
         BigInteger limit = BigInteger.TEN.pow(999);
@@ -22,6 +22,6 @@ public class Problem025 extends Problem {
             b = temp;
             count++;
         }
-        System.out.println(count);
+        return count;
     }
 }

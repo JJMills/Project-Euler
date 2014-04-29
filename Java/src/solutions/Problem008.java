@@ -30,7 +30,7 @@ public class Problem008 extends Problem {
             "71636269561882670428252483600823257530420752963450";
 
     @Override
-    public void solve() {
+    public Object solve() {
         char[] digits = DATA.toCharArray();
         int max = 0;
         for (int i = 0; i < digits.length - 4; i++) {
@@ -42,6 +42,6 @@ public class Problem008 extends Problem {
                 max = val;
             }
         }
-        System.out.println(max);
+        return max;
     }
 }

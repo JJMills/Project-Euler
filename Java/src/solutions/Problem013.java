@@ -112,13 +112,13 @@ public class Problem013 extends Problem {
             "53503534226472524250874054075591789781264330331690";
 
     @Override
-    public void solve() {
+    public Object solve() {
         BigInteger[] numbers = generateNumbers();
         BigInteger total = BigInteger.ZERO;
         for (BigInteger number : numbers) {
             total = total.add(number);
         }
-        System.out.println(total.toString().substring(0, 10));
+        return total.toString().substring(0, 10);
     }
 
     private BigInteger[] generateNumbers() {

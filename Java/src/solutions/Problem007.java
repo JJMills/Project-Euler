@@ -10,7 +10,7 @@ import utilities.NumberTheory;
 )
 public class Problem007 extends Problem {
     @Override
-    public void solve() {
+    public Object solve() {
         int i = 0;
         int val = 2;
         while (true) {
@@ -19,6 +19,6 @@ public class Problem007 extends Problem {
             }
             val++;
         }
-        System.out.println(val);
+        return val;
     }
 }

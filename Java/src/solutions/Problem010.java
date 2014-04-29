@@ -9,7 +9,7 @@ import framework.ProblemInfo;
 )
 public class Problem010 extends Problem {
     @Override
-    public void solve() {
+    public Object solve() {
         long sum = 0L;
         int limit = 2_000_000;
         boolean[] primes = new boolean[limit];
@@ -22,6 +22,6 @@ public class Problem010 extends Problem {
                 }
             }
         }
-        System.out.println(sum);
+        return sum;
     }
 }

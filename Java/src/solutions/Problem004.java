@@ -10,7 +10,7 @@ import utilities.Strings;
 )
 public class Problem004 extends Problem {
     @Override
-    public void solve() {
+    public Object solve() {
         int palindrome = 0;
         for (int i = 999; i >= 100; i--) {
             for (int j = i; j >= 100; j--) { //j = i to avoid repetition.
@@ -20,6 +20,6 @@ public class Problem004 extends Problem {
                 }
             }
         }
-        System.out.println(palindrome);
+        return palindrome;
     }
 }

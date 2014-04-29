@@ -9,7 +9,7 @@ import framework.ProblemInfo;
 )
 public class Problem002 extends Problem {
     @Override
-    public void solve() {
+    public Object solve() {
         int a = 1;
         int b = 2;
         int total = 2; //Starting at 2 because the below excludes the first two values of the sequence.
@@ -21,6 +21,6 @@ public class Problem002 extends Problem {
                 total += c;
             }
         }
-        System.out.println(total);
+        return total;
     }
 }

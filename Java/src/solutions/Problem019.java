@@ -9,7 +9,7 @@ import framework.ProblemInfo;
 )
 public class Problem019 extends Problem {
     @Override
-    public void solve() {
+    public Object solve() {
         int count = 0;
         int weekday = 2; // 1 - 7 mapping to Mon - Sun, 1st Jan 1901 is a Tuesday
         for (int year = 1901; year <= 2000; year++) {
@@ -23,7 +23,7 @@ public class Problem019 extends Problem {
                 }
             }
         }
-        System.out.println(count);
+        return count;
     }
 
     private int getDaysInMonth(int month, int year) {

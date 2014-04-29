@@ -7,7 +7,7 @@ public class Loader {
         System.out.println(problem);
 
         long start = System.currentTimeMillis();
-        problem.solve();
+        System.out.println(problem.solve());
         long end = System.currentTimeMillis();
 
         System.out.println("Computation time: " + (end - start) + "ms");

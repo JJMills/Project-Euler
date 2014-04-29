@@ -10,8 +10,8 @@ import utilities.NumberTheory;
 )
 public class Problem006 extends Problem {
     @Override
-    public void solve() {
+    public Object solve() {
         int sum = NumberTheory.summationTo(100);
-        System.out.println(sum * sum - NumberTheory.summationOfSquaresTo(100));
+        return sum * sum - NumberTheory.summationOfSquaresTo(100);
     }
 }

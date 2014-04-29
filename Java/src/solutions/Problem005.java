@@ -10,11 +10,11 @@ import utilities.NumberTheory;
 )
 public class Problem005 extends Problem {
     @Override
-    public void solve() {
+    public Object solve() {
         int lcm = 1;
         for (int i = 2; i <= 20; i++) {
             lcm = NumberTheory.lowestCommonMultiple(lcm, i);
         }
-        System.out.println(lcm);
+        return lcm;
     }
 }

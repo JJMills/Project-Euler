@@ -8,7 +8,7 @@ public abstract class Problem {
         this.info = this.getClass().getAnnotation(ProblemInfo.class);
     }
 
-    public abstract void solve();
+    public abstract Object solve();
 
     @Override
     public String toString() {

@@ -9,8 +9,8 @@ import framework.ProblemInfo;
 )
 public class ExampleProblem extends Problem {
     @Override
-    public void solve() {
+    public Object solve() {
         // Computing stuff...
-        System.out.println("Solution found: 42");
+        return "Solution found: 42";
     }
 }

@@ -11,8 +11,8 @@ public class Problem023 extends Problem {
     private static final int LIMIT = 28123;
 
     @Override
-    public void solve() {
-        System.out.println(getAbundantSum());
+    public Object solve() {
+        return getAbundantSum();
     }
 
     private int getAbundantSum() {

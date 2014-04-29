@@ -9,7 +9,7 @@ import framework.ProblemInfo;
 )
 public class Problem003 extends Problem {
     @Override
-    public void solve() {
+    public Object solve() {
         long number = 600851475143L;
         int prime = 1;
         while (number != 1) {
@@ -18,6 +18,6 @@ public class Problem003 extends Problem {
                 number /= prime;
             }
         }
-        System.out.println(prime);
+        return prime;
     }
 }
