@@ -1,3 +1,5 @@
+package solutions;
+
 import java.math.BigInteger;
 
 public class Problem025 {

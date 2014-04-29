@@ -1,3 +1,5 @@
+package solutions;
+
 public class Problem011 {
 	private static final int[][] NUMBERS = {
 			{8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8},

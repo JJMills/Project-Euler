@@ -1,3 +1,5 @@
+package solutions;
+
 public class Problem005 {
 	public static void main(String[] args) {
 		int lcm = 1;

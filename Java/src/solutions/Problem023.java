@@ -1,3 +1,5 @@
+package solutions;
+
 public class Problem023 {
 	private static final int LIMIT = 28123;
 

@@ -1,3 +1,5 @@
+package solutions;
+
 public class Problem006 {
 	public static void main(String[] args) {
 		int sum = summationTo(100);

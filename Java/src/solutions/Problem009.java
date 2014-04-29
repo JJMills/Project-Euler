@@ -1,3 +1,5 @@
+package solutions;
+
 public class Problem009 {
 	public static void main(String[] args) {
 		loop:

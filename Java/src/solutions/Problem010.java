@@ -1,3 +1,5 @@
+package solutions;
+
 public class Problem010 {
 	public static void main(String[] args) {
 		long sum = 0L;

@@ -1,3 +1,5 @@
+package solutions;
+
 public class Problem008 {
 	public static void main(String[] args) {
 		String input = "73167176531330624919225119674426574742355349194934" +

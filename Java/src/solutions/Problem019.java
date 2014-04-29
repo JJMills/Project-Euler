@@ -1,3 +1,5 @@
+package solutions;
+
 public class Problem019 {
 	public static void main(String[] args) {
 		int count = 0;

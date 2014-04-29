@@ -1,3 +1,5 @@
+package solutions;
+
 public class Problem002 {
 	public static void main(String[] args) {
 		int a = 1;

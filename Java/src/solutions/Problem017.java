@@ -1,3 +1,5 @@
+package solutions;
+
 public class Problem017 {
 	private static final String[] ZERO_TO_NINE = {"zero", "one", "two", "three", "four", "five",
 			"six", "seven", "eight", "nine"};
