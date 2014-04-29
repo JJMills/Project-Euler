@@ -1,16 +1,17 @@
 package solutions;
 
-public class Problem006 {
-	public static void main(String[] args) {
-		int sum = summationTo(100);
-		System.out.println(sum * sum - summationOfSquaresTo(100));
-	}
+import framework.Problem;
+import framework.ProblemInfo;
+import utilities.NumberTheory;
 
-	private static int summationTo(int n) {
-		return (n * (n + 1)) / 2;
-	}
-
-	private static int summationOfSquaresTo(int n) {
-		return (n * (n + 1) * (2 * n + 1)) / 6;
-	}
+@ProblemInfo(
+        description = "Sum square difference",
+        number = 6
+)
+public class Problem006 extends Problem {
+    @Override
+    public void solve() {
+        int sum = NumberTheory.summationTo(100);
+        System.out.println(sum * sum - NumberTheory.summationOfSquaresTo(100));
+    }
 }
